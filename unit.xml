@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.5710" tests="11" failures="5">
+  <testsuite name="Root Suite" timestamp="2022-04-13T00:15:21" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="products_api_medium" timestamp="2022-04-13T00:15:21" tests="11" file="D:\bg\products-api-medium-EdwardRios\test\index.spec.js" time="0.5710" failures="5">
+    <testcase name="products_api_medium should create a new product" time="0.0460" classname="should create a new product">
+      <failure message="expected {} to deeply equal { Object (name, price, ...) }" type="AssertionError"><![CDATA[AssertionError: expected {} to deeply equal { Object (name, price, ...) }
+    at Context.<anonymous> (test\index.spec.js:64:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="products_api_medium should create a new products without the published field" time="0.0120" classname="should create a new products without the published field">
+      <failure message="expected {} to deeply equal { Object (name, price, ...) }" type="AssertionError"><![CDATA[AssertionError: expected {} to deeply equal { Object (name, price, ...) }
+    at Context.<anonymous> (test\index.spec.js:71:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="products_api_medium should fetch all the products" time="0.0790" classname="should fetch all the products">
+      <failure message="expected [ Array(4) ] to deeply equal [ {}, {}, {}, {} ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ {}, {}, {}, {} ]
+    at Context.<anonymous> (test\index.spec.js:78:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="products_api_medium should fetch no products if there are not products stored" time="0.0120" classname="should fetch no products if there are not products stored">
+    </testcase>
+    <testcase name="products_api_medium should publish the product if all the constraints are met" time="0.0970" classname="should publish the product if all the constraints are met">
+    </testcase>
+    <testcase name="products_api_medium should publish the product and the data should be updated in the DB" time="0.0800" classname="should publish the product and the data should be updated in the DB">
+      <failure message="expected 1 to deeply equal true" type="AssertionError"><![CDATA[AssertionError: expected 1 to deeply equal true
+    at Context.<anonymous> (test\index.spec.js:101:43)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="products_api_medium should get 422 when MRP is less the price of the product" time="0.0760" classname="should get 422 when MRP is less the price of the product">
+    </testcase>
+    <testcase name="products_api_medium should get 422 when stock of the product is 0" time="0.0570" classname="should get 422 when stock of the product is 0">
+    </testcase>
+    <testcase name="products_api_medium should get 422 when both  MRP is less the price of the product and stock of the product is 0" time="0.0610" classname="should get 422 when both  MRP is less the price of the product and stock of the product is 0">
+      <failure message="expected 1 to deeply equal 2" type="AssertionError"><![CDATA[AssertionError: expected 1 to deeply equal 2
+    at Context.<anonymous> (test\index.spec.js:122:37)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]></failure>
+    </testcase>
+    <testcase name="products_api_medium should get 405 for a put request to /products/:id" time="0.0300" classname="should get 405 for a put request to /products/:id">
+    </testcase>
+    <testcase name="products_api_medium should get 405 for a delete request to /products/:id" time="0.0210" classname="should get 405 for a delete request to /products/:id">
+    </testcase>
+  </testsuite>
+</testsuites>

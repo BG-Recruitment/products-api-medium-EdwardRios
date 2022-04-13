@@ -11,7 +11,10 @@ const Product = sequelize.define("product", {
     price: DataTypes.FLOAT,
     mrp: DataTypes.FLOAT,
     stock: DataTypes.INTEGER,
-    isPublished: DataTypes.BOOLEAN
+    isPublished: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    }
 }, {timestamps: false});
 
 module.exports = Product;
